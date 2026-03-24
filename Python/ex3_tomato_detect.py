@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('/Python/tomato.jpeg')
+img = cv2.imread('Python/tomato.jpeg')
 lower = np.array([0, 20, 70])
 upper = np.array([80, 100, 255])
 mask = cv2.inRange(img, lower, upper)
